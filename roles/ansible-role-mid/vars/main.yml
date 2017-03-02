@@ -1,2 +1,5 @@
 ---
 # vars file for ansible-role-mid
+
+# TODO figure out how to extract this.  Should be in a test file
+now_instance: dev29424.service-now.com
