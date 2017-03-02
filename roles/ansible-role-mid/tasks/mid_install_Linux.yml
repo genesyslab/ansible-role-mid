@@ -37,6 +37,10 @@
     dest: "{{ now_mid_base_path }}/{{ now_instance_mid_install_uri.split('/')[-1] }}"
     force: no
 
+# TODO - figure out best way to split out into cent/rhel as yum wouldn't work on ubuntu but I don't care
+- name: Install unzip
+  yum: name=unzip
+
 # Bug fixed in 2.1.1? spaces in file name bombs out, seeing this now on OSX brew install of Ansible, maybe fixed once it hits brew?
 - name: Unzip MID install file
   unarchive:
