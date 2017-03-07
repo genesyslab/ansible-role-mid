@@ -1,0 +1,9 @@
+- hosts: all
+  roles:
+     - ansible-role-mid
+  vars:
+    now_instance: dev29424.service-now.com
+    now_instance_username: miduser_service_account
+    now_instance_password: Quopohl9
+  # vars_files:
+  #   - /tmp/kitchen/group_vars/all.yml
